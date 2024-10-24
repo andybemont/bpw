@@ -1,11 +1,12 @@
+import React from "react";
 import * as Icons from "react-feather";
 
-function NamedIcon({ iconName }) {
-  const Icon = Icons[iconName];
+const NamedIcon = React.forwardRef(function NamedIcon(props, ref) {
+  const Icon = Icons[props.icon];
   if (!Icon) {
-    alert("bad icon: " + iconName);
+    alert("bad icon: " + props.icon);
   }
-  return <Icon color="black" />;
-}
+  return <Icon {...props} color="white" ref={ref} />;
+});
 
 export default NamedIcon;

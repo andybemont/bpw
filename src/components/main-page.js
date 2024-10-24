@@ -1,5 +1,6 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "../App.css";
+import Footer from "./footer";
 import Header from "./header";
 
 const MainPage = ({ showSection }) => {
@@ -9,9 +10,91 @@ const MainPage = ({ showSection }) => {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Header />
-        <div>
+        <main>
           <p>{showSection}</p>
-        </div>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+          <p>{showSection}</p>
+        </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid2";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Tooltip from "@mui/material/Tooltip";
@@ -36,8 +35,8 @@ const AdditionalLinksMenu = ({ links }) => {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          <Tooltip title="Site Menu">
-            <NamedIcon iconName="Menu" />
+          <Tooltip title="More...">
+            <NamedIcon icon="Menu" />
           </Tooltip>
         </Button>
         <Menu
@@ -61,9 +60,6 @@ const AdditionalLinksMenu = ({ links }) => {
                 key={link.icon}
                 onClick={() => FollowLink(link, navigate)}
               >
-                <ListItemIcon>
-                  <NamedIcon iconName={link.icon} />
-                </ListItemIcon>
                 {link.text}
               </MenuItem>
             );

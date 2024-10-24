@@ -2,72 +2,84 @@ const links = {
   home: {
     url: "/",
     text: "Home",
-    icon: "Globe",
+    icon: "Home",
     isExternal: false,
+    placement: "top",
   },
   meetTheTeam: {
     url: "/meet-the-team",
     text: "Meet the Team",
     icon: "User",
     isExternal: false,
+    placement: "top",
   },
   pricing: {
     url: "/wedding-photography-pricing",
     text: "Pricing",
     icon: "DollarSign",
     isExternal: false,
+    placement: "top",
   },
   contact: {
     url: "/contact",
     text: "Get In Touch",
     icon: "MessageSquare",
     isExternal: false,
+    placement: "top",
   },
   faq: {
     url: "/wedding-photography-details",
     text: "What to Expect",
     icon: "Clipboard",
     isExternal: false,
+    placement: "top",
   },
   availability: {
     url: "/availability",
     text: "Availability",
     icon: "Calendar",
     isExternal: false,
+    placement: "buried",
   },
   morePictures: {
     url: "https://gallery.bemontphoto.com/favorites/",
     text: "More Pictures",
     icon: "Camera",
     isExternal: true,
+    placement: "buried",
   },
   galleries: {
     url: "http://gallery.bemontphoto.com/",
     text: "Full Galleries",
     icon: "Archive",
     isExternal: true,
+    placement: "buried",
   },
   makeAPayment: {
     url: "https://www.paypal.me/BemontPhoto",
     text: "Make a Payment",
     icon: "Send",
     isExternal: true,
+    placement: "buried",
   },
   instagram: {
     url: "https://www.instagram.com/thebemontphoto/",
     text: "Instagram",
     icon: "Instagram",
     isExternal: true,
+    placement: "footer",
   },
   facebook: {
     url: "https://www.facebook.com/bemontphoto",
     text: "Facebook",
     icon: "Facebook",
     isExternal: true,
+    placement: "footer",
   },
 };
 
-const orderedDropdownMenuLinks = [
+const allLinks = [
+  links.home,
   links.meetTheTeam,
   links.pricing,
   links.contact,
@@ -79,4 +91,4 @@ const orderedDropdownMenuLinks = [
   links.instagram,
   links.facebook,
 ];
-export { links, orderedDropdownMenuLinks };
+export { allLinks, links };

@@ -13,9 +13,12 @@ const IconHeaderLink = (props) => {
       alignItems="center"
       size="grow"
     >
-      <div onClick={() => FollowLink(props.link, navigate)}>
+      <div
+        onClick={() => FollowLink(props.link, navigate)}
+        className="icon-header-link"
+      >
         <Tooltip title={props.link.text}>
-          <NamedIcon iconName={props.link.icon} />
+          <NamedIcon icon={props.link.icon} />
         </Tooltip>
       </div>
     </Grid>
